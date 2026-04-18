@@ -3,30 +3,25 @@ import { useState, useEffect } from "react";
 // ─── DATA ────────────────────────────────────────────────────────────────────
 const TEACHERS = [
   { id: 1, name: "Bashir Ahmad Dar", subject: "Head of Institution", role: "HOI" },
-  { id: 2, name: "Mohammad Yusuf Wani", subject: "Mathematics" },
-  { id: 3, name: "Farida Bano", subject: "Science" },
-  { id: 4, name: "Abdul Rashid Mir", subject: "English" },
-  { id: 5, name: "Rukhsana Akhter", subject: "Urdu" },
-  { id: 6, name: "Ghulam Nabi Shah", subject: "Social Studies" },
-  { id: 7, name: "Shaheena Begum", subject: "Hindi" },
-  { id: 8, name: "Tariq Ahmad Bhat", subject: "Computer Science" },
-  { id: 9, name: "Nusrat Fatima", subject: "Biology" },
-  { id: 10, name: "Mushtaq Ahmad Lone", subject: "Physics" },
-  { id: 11, name: "Sameena Kouser", subject: "Chemistry" },
-  { id: 12, name: "Fayaz Ahmad Rather", subject: "Geography" },
-  { id: 13, name: "Gulshan Ara", subject: "History" },
-  { id: 14, name: "Showkat Hussain", subject: "Physical Education" },
-  { id: 15, name: "Nasreen Jan", subject: "Arts & Craft" },
-  { id: 16, name: "Bilal Ahmad Wani", subject: "Economics" },
-  { id: 17, name: "Zubeda Bano", subject: "Kashmiri" },
-  { id: 18, name: "Arshad Hussain Dar", subject: "Library & Info Sci." },
-];
+  { id: 2, name: "Rafiq sir", subject: "Mathematics" },
+  { id: 3, name: "Shafi Sir", subject: "Biology" },
+  { id: 4, name: "Riyaz Sir", subject: "English" },
+  { id: 5, name: "Athar Sir", subject: "Urdu" },
+  { id: 6, name: "Zaffar Sir", subject: "Social Studies" },
+  { id: 7, name: "Kousar Mam", subject: "civics" },
+  { id: 8, name: "Shabir Sir", subject: "Physics" },
+  { id: 9, name: "Qyumat Mam", subject: "Science" },
+  { id: 10, name: "Nighat Mam", subject: "Kashmiri" },
+  { id: 11, name: "Masrat mam", subject: "Kashmiri" },
+  { id: 12, name: "Tabasum Mam", subject: "Urdu" },
+  { id: 13, name: "Akif Sir", subject: "Vocational" },
+  { id: 14, name: "Showkat Sir", subject: "Physical Education" },
 
 const INITIAL_HOUSES = [
-  { id: "azad", name: "Azad House", color: "#ef4444", duties: "Morning assembly arrangement, Sports day coordination, Flag hoisting duty", teacher: "Mohammad Yusuf Wani" },
-  { id: "mehjoor", name: "Mehjoor House", color: "#3b82f6", duties: "Library maintenance, Cultural events, Literary competitions", teacher: "Farida Bano" },
-  { id: "galib", name: "Galib House", color: "#10b981", duties: "Cleanliness drive, Garden maintenance, Environmental awareness", teacher: "Abdul Rashid Mir" },
-  { id: "dhouse", name: "D House", color: "#f59e0b", duties: "Canteen supervision, Visitor management, Notice board updates", teacher: "Rukhsana Akhter" },
+  { id: "azad", name: "Azad House", color: "#ef4444", duties: "Morning assembly arrangement, Sports day coordination, Flag hoisting duty", leader: "Ateeb andrabii" },
+  { id: "mehjoor", name: "Mehjoor House", color: "#3b82f6", duties: "Library maintenance, Cultural events, Literary competitions", leader: "Arbeena Shabir" },
+  { id: "galib", name: "Galib House", color: "#10b981", duties: "Cleanliness drive, Garden maintenance, Environmental awareness", leader: "Faisal Gulzar" },
+  { id: "dhouse", name: "D House", color: "#f59e0b", duties: "Canteen supervision, Visitor management, Notice board updates", leader: "Huzaifa Rafiq" },
 ];
 
 const TIMETABLE = [
